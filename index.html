@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>International Air Line</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,500&display=swap"
+    rel="stylesheet">
+<style>
+    body {
+
+        background-image: url(https://images.pexels.com/photos/3375161/pexels-photo-3375161.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+        background-repeat: no-repeat;
+        height: 1000px;
+        background-size: cover;
+        background-color: #3b0313;
+    }
+
+    header {
+        
+        background-color: #5c0632;
+        padding: 7px;
+        font-size: 13.5px;
+    }
+
+    li {
+        display: inline-block;
+        margin-right: 15px;
+        
+
+    }
+
+    #h1 {
+        /* background-color: #333; */
+        display: block;
+        width: 30%;
+        margin: 3px auto;
+        border-radius: 5cm;
+        
+    }
+
+    li a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+
+    }
+
+    li a:hover {
+        border-bottom: 2px solid #ffffff;
+
+    }
+
+    #h2 {
+
+        position: absolute;
+        left: 1340px;
+        top: 20px;
+        padding: 10px;
+    }
+
+    #h2 .hb:hover {
+        padding: 5px;
+        border: 5px;
+        font-size: 0.5cm;
+        color: #ffffff;
+        background-color: #3b0313;
+        border-radius: 5cm;
+
+    }
+
+    #h2 .hb {
+
+        padding: 5px;
+        border: 5px;
+        font-size: 0.5cm;
+        color: #ffffff;
+        background-color: #5c0632;
+        border-radius: 5cm;
+        cursor: pointer;
+    }
+
+    #h3 {
+        position: absolute;
+        top: 8px;
+        left: 20px;
+    }
+
+    #h3 img {
+        max-width: 193.5px;
+    }
+
+    #m1 {
+        /* border: 2px solid #3b0313; */
+        font-size: 0.4cm;
+        text-align: center;
+        margin-top: 30px;
+    }
+main{
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+    #m2 {
+        font-family: 'Bricolage Grotesque', sans-serif;
+        font-weight: bold;
+        font-size: 1cm;
+        text-align: center;
+        color: rgb(33, 33, 33);
+
+    }
+
+    #m3 {
+        font-size: 0.75cm;
+        width: 40%;
+        margin: auto;
+        color: rgb(40, 40, 40);
+        background-color: rgba(255, 255, 255, 0.225);
+
+    }
+
+    #m3 p {
+        margin: 0%;
+        text-align: center;
+    }
+
+    #m4 {
+        border: 5px solid #5c0632;
+        width: 65%;
+        margin: auto;
+        height: 250px;
+        margin-top: 20px;
+    }
+
+    .button {
+        width: 290px;
+        height: 50px;
+        padding-left: 30px;
+        font-size: 0.5cm;
+        border-radius: 10px;
+        position: relative;
+        border: 2px solid #5c0632;
+    }
+
+    #date {
+        top: 40px;
+        left: 50px;
+        padding: 0px 5px;
+        width: 15%;
+        
+    }
+
+    #number {
+        top: 40px;
+        left: 50px;
+        margin: 10px;
+        width: 25%;
+    }
+
+
+    #departure {
+        top: 40px;
+        left: 50px;
+        margin: 10px;
+    }
+
+    .button1 {
+        cursor: pointer;
+        border: none;
+        background-color: #5c0632;
+        color: aliceblue;
+        width: 290px;
+        height: 50px;
+        font-size: 0.5cm;
+        border-radius: 10px;
+        position: relative;
+    }
+
+    button:active {
+        cursor: pointer;
+        background-color: #3b0313;
+        border: solid #3b0313;
+        color: aliceblue;
+    }
+
+    .m4 {
+        padding: 5px;
+        font-size: 0.5cm;
+        color: aliceblue;
+        background-color: #5c0632;
+    }
+
+    footer {
+        margin-top: 0.85cm;
+    background-color: #3b0313;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: aliceblue;
+}
+
+.footer-menu, .useful-links, .connect-with-us, .contact-info {
+    flex: 1;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.contact-info p {
+    font-size: 20px;
+}
+
+.footer-menu ul, .useful-links ul, .connect-with-us ul {
+    padding: 0;
+}
+
+.footer-menu ul li, .useful-links ul li, .connect-with-us ul li {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+#m5{
+    width: 75%;
+    margin: auto;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.326);
+    padding: 20px;
+    font-size: 0.5cm;
+}
+hr{
+    width: 50%;
+    border: #5c0632 2px solid;
+    margin: 0%;
+}
+
+
+</style>
+
+
+<body>
+    <header>
+        <div id="h1">
+            <ul>
+                <li><a href="#">Book</a></li>
+                <li><a href="#">Manage</a></li>
+                <li><a href="#">Where we fly</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </div>
+        <div id="h2">
+            <button class="hb">Contact us</button>
+            <button class="hb">Email us</button>
+        </div>
+        <div id="h3">
+            <img src="pro1.jpg" alt="">
+
+        </div>
+    </header>
+    <main>
+        <div id="m1">
+            B o o k
+        </div>
+        <div id="m2">
+            Book&nbsp; a&nbsp; flight
+        </div>
+        <div id="m3">
+            <p>
+                Search for International flights and book online. See our routes and schedules, and discover more about
+                the experience you can look forward to on board.
+            </p>
+        </div>
+        <div id="m4">
+            <div class="m4">Search your Flight</div>
+            <input type="search" placeholder="Departure Airport" class="button" id="departure">
+            <input type="search" placeholder="Arrival Airport" class="button" id="departure">
+
+            <input type="date" class="button" id="date">
+
+            <input type="date" class="button" id="date">
+
+            <input type="number" placeholder="Passengers" class="button" id="number">
+            <input type="search" placeholder="Class(Economy)" class="button" id="departure">
+            <button class="button1" id="departure">Search Flight</button>
+        </div>
+        <div id="m5">
+            <h1>How to book a flight ticket with HS</h1>
+            <hr>
+            <h2>Book a flight ticket online</h2>
+            <p>To find the right air ticket for your trip, just enter the location you're flying from and your flight destination. Enter your dates, class of travel and the number of passengers. Select "Search flights" to continue with the online flight booking process and book a flight ticket that suits your travel plans.</p>
+            <h2>Compare flight ticket fares</h2>
+            <p>Look out for our Best Price Guarantee mark to make sure you're getting the best flight ticket price when you book a flight with HS.</p>
+        </div>
+
+    </main>
+    <footer>
+        
+        <div class="footer-menu">
+            <ul>
+                <li>Home</li>
+                <li>Flights</li>
+                <li>Destinations</li>
+                <li>Travel Information</li>
+                <li>Manage Booking</li>
+                <li>About Us</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+        <div class="useful-links">
+            <ul>
+                <li>Flight Status</li>
+                <li>Baggage Information</li>
+                <li>Check-in Options</li>
+                <li>Travel Policies</li>
+                <li>Privacy Policy</li>
+                <li>Terms and Conditions</li>
+            </ul>
+        </div>
+        <div class="connect-with-us">
+            <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+                <li>LinkedIn</li>
+            </ul>
+        </div>
+        <div class="contact-info">
+            <p>Customer Service: [Customer Service Phone Number]</p>
+            <p>Email: [Customer Service Email]</p>
+            <p>Address: [Airline Headquarters Address]</p>
+        </div>
+    </footer>
+</body>
+
+</html>
