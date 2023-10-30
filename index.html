@@ -1,94 +1,122 @@
-<!DOCTYPE html>
+<DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>International Air Line</title>
+    <title>flex box</title>
 </head>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,500&display=swap"
     rel="stylesheet">
 <style>
     body {
 
+        background-color: #a09f9f;
         background-image: url(https://images.pexels.com/photos/3375161/pexels-photo-3375161.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
         background-repeat: no-repeat;
-        height: 1000px;
+        /* height: 1000px; */
         background-size: cover;
-        background-color: #3b0313;
+        display: flex;
+        flex-flow: column wrap;
+        
+        align-content: space-between;
     }
 
     header {
-        
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
         background-color: #5c0632;
-        padding: 7px;
-        font-size: 13.5px;
+        height: 70px;
+        width: 100%;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        border-radius: 10px;
     }
-
-    li {
-        display: inline-block;
-        margin-right: 15px;
-        
-
+    
+    #headhr{
+        display: none;
+    }
+    #h1hidden{
+        display: none;
     }
 
     #h1 {
-        /* background-color: #333; */
-        display: block;
-        width: 30%;
-        margin: 3px auto;
-        border-radius: 5cm;
-        
+        display: flex;
+        align-content: center;
+        flex-wrap: wrap;
+        margin-left: 15px;
     }
 
-    li a {
-        text-decoration: none;
-        color: rgb(255, 255, 255);
-
-    }
-
-    li a:hover {
-        border-bottom: 2px solid #ffffff;
-
+    #h1 img {
+        height: 60px;
+        width: 150px;
+        /* border-radius: 10px; */
     }
 
     #h2 {
-
-        position: absolute;
-        left: 1340px;
-        top: 20px;
-        padding: 10px;
+        display: flex;
+        align-content: center;
+        flex-wrap: wrap;
     }
 
-    #h2 .hb:hover {
-        padding: 5px;
-        border: 5px;
-        font-size: 0.5cm;
-        color: #ffffff;
-        background-color: #3b0313;
-        border-radius: 5cm;
-
+    #h2 ul {
+        margin: 0px 10px;
+        padding: 0px;
+        list-style: none;
+        display: flex;
     }
 
-    #h2 .hb {
+    #h2 ul li {
+        font-size: 30px;
+        margin: 0px 10px;
+    }
 
-        padding: 5px;
-        border: 5px;
-        font-size: 0.5cm;
-        color: #ffffff;
-        background-color: #5c0632;
-        border-radius: 5cm;
-        cursor: pointer;
+    #h2 ul a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    #h2 li:hover {
+        border-bottom: 5px solid #3b0313;
+        transition: all 0.5s;
+    }
+    #h2 li{
+        border-bottom: 5px solid transparent;
     }
 
     #h3 {
-        position: absolute;
-        top: 8px;
-        left: 20px;
+        display: flex;
+        flex-flow: row wrap;
+        align-content: center;
+        margin-right: 10px;
     }
 
-    #h3 img {
-        max-width: 193.5px;
+    #h3 .hb {
+        height: 30px;
+        margin-right: 5px;
+        border-radius: 13px;
+        font-size: 20px;
+        background-color: #5c0632;
+        color: #fff;
+        font-weight: bold;
+        border: none;
+    }
+
+    #h3 .hb:hover {
+        cursor: pointer;
+        background-color: #3b0313;
+
+
+    }
+
+    #main1 {
+        /* height: 660px; */
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        align-content: space-around;
     }
 
     #m1 {
@@ -97,9 +125,7 @@
         text-align: center;
         margin-top: 30px;
     }
-main{
-    font-family: 'Bricolage Grotesque', sans-serif;
-}
+
     #m2 {
         font-family: 'Bricolage Grotesque', sans-serif;
         font-weight: bold;
@@ -115,7 +141,7 @@ main{
         margin: auto;
         color: rgb(40, 40, 40);
         background-color: rgba(255, 255, 255, 0.225);
-
+        margin-bottom: 20px;
     }
 
     #m3 p {
@@ -123,212 +149,364 @@ main{
         text-align: center;
     }
 
-    #m4 {
-        border: 5px solid #5c0632;
-        width: 65%;
-        margin: auto;
-        height: 250px;
-        margin-top: 20px;
-    }
-
-    .button {
-        width: 290px;
-        height: 50px;
-        padding-left: 30px;
-        font-size: 0.5cm;
-        border-radius: 10px;
-        position: relative;
-        border: 2px solid #5c0632;
-    }
-
-    #date {
-        top: 40px;
-        left: 50px;
-        padding: 0px 5px;
-        width: 15%;
+    #main2 {
+        display: flex;
+        flex-flow: row wrap;
+        width: 70%;
+        height: 390px;
+        align-self: center;
+        border: #5c0632 3px solid;
+        justify-content: space-evenly;
+        align-content: center;
         
     }
 
-    #number {
-        top: 40px;
-        left: 50px;
-        margin: 10px;
-        width: 25%;
+    .button {
+        display: flex;
+        font-size: 0.6cm;
+        width: 300px;
+        margin-bottom: 25px;
+        height: 35px;
+        flex-shrink: 4;
+        padding: 0%;
+        text-align: center;
+        border-radius: 7px;
+        border-color: #5c0632;
     }
 
-
-    #departure {
-        top: 40px;
-        left: 50px;
-        margin: 10px;
-    }
 
     .button1 {
-        cursor: pointer;
+        width: 140px;
+        height: 35px;
+        font-size: 0.5cm;
+        border-radius: 7px;
+        border-color: #5c0632;
+
+
+    }
+
+    .button2 {
+        width: 300px;
+        height: 35px;
+        font-size: 0.6cm;
+        flex-shrink: 4;
+        border-radius: 7px;
         border: none;
         background-color: #5c0632;
-        color: aliceblue;
-        width: 290px;
-        height: 50px;
-        font-size: 0.5cm;
-        border-radius: 10px;
-        position: relative;
+        color: #fff;
     }
 
-    button:active {
-        cursor: pointer;
+    .button2:hover {
+        border: none;
         background-color: #3b0313;
-        border: solid #3b0313;
-        color: aliceblue;
+        color: #fff;
+        cursor: pointer;
     }
 
-    .m4 {
-        padding: 5px;
-        font-size: 0.5cm;
-        color: aliceblue;
+    #main2top {
+        border: #5c0632 3px solid;
+        color: #fff;
         background-color: #5c0632;
+        width: 70%;
+        align-self: center;
+        font-size: 0.7cm;
+    }
+
+    #m5 {
+        width: 75%;
+        margin: auto;
+        margin-top: 20px;
+        background-color: rgba(255, 255, 255, 0.326);
+        padding: 20px;
+        font-size: 0.5cm;
+        margin-bottom: 20px;
+    }
+
+    hr {
+        width: 50%;
+        border: #5c0632 2px solid;
+        margin: 0%;
     }
 
     footer {
-        margin-top: 0.85cm;
-    background-color: #3b0313;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    color: aliceblue;
+        background-color: #5c0632;
+        text-align: center;
+        font-size: 0.5cm;
+        padding: 5px;
+        color: #fff;
+    }
+
+@media (max-width:900px){
+    header{
+        height: 50px;
+    }
+    #h1 img{
+        height: 40px;
+        width: 90px;
+    }
+    #h2 {
+        display: flex;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+    #h2 li a{
+        font-size: 19px;
+        font-weight: bold;
+    }
+    #h2 li{
+        display: flex;
+        align-content: center;
+    }
+    #h3 .hb{
+        font-weight: bold;
+        font-size: 15px;
+    }
+    #main2top{
+        width: 80%;
+    }
+    #main2{
+        width: 80%;
+    }
+    #m3{
+        /* width: 50%; */
+        font-size: 20px;
+    }
+    hr{
+        width: 90%;
+    }
+}
+@media (max-width:790px){
+    #m3{
+        font-size: 17px;
+    }
+    #main2top{
+        width: 85%;
+    }
+    #main2{
+        width: 85%;
+        height: 300px;
+    }
+    .button, .button1, .button2{
+        width: 170px;
+        font-size: 20px;
+    }
+    #m5 h1{
+        font-size: 30px;
+    }
+    #m5 h2{
+        font-size: 25px;
+    }
+}
+@media (max-width:660px){
+    #h2 {
+        display: flex;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+    #h2 li a{
+        font-size: 14px;
+        font-weight: bold;
+    }
+    #h2 li{
+        display: flex;
+        align-content: center;
+    }
+    #h3 .hb{
+        font-weight: bold;
+        font-size: 14px;
+    }
+    #m5 h1{
+        font-size: 25px;
+    }
+    #m5 h2{
+        font-size: 20px;
+    }
+    hr{
+        width: 90%;
+    }
+}
+@media (max-width:580px){
+    header{
+        display: block;
+        height: 100px;
+    }
+    #headhr{
+        display: block;
+        border: 1px solid #3b0313;
+        margin-top: 5px ;
+        width: 98%;
+    }
+    #h1{
+        display: inline-block;
+    }
+    #h1hidden{
+        display: inline;
+        float: right;
+        margin-right:5px ;
+        margin-top: 20px;
+    }
+    .hbh{
+        font-size: 17px;
+        width: 60px;
+        padding: 0%;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        background-color: #5c0632;
+        color: #fff;
+        
+    }
+    .hbh:hover{ 
+        background-color: #3b0313;
+    }
+    #h1 img{
+        height: 50px;
+        width: 110px;
+        float: left;
+        margin-top: 5px;
+    }
+    #h2{
+        display: block;
+        margin-top: 10px;
+    }
+    #h3{
+        float: right;
+        display: none;
+    }
+    #h2 li a{
+        font-size: 17px;
+    }#h2 ul{
+        width: 95%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+    
+}
+@media (max-width:490px){
+    #h3{
+        display: none;
+    }
+    
+    .button, .button1, .button2{
+        width: 40%;
+        font-size: 15px;
+    }
+    #m3{
+        width: 80%;
+    }
+    
+    
 }
 
-.footer-menu, .useful-links, .connect-with-us, .contact-info {
-    flex: 1;
+@media (max-width:344px){
+    
+    #h2 li a{
+        font-size: 13px;
+        
+    }
+    .hbh{
+        font-size: 13px;
+        width: 45px;
+        padding: 0%;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        background-color: #5c0632;
+        color: #fff;
+        
+    }
+    .hbh:hover{
+        background-color: #3b0313;
+    }
 }
-
-ul li {
-    margin-bottom: 10px;
-    font-size: 20px;
+@media (max-width:291px){
+    header{
+        height: 110px;
+    }
 }
-
-.contact-info p {
-    font-size: 20px;
-}
-
-.footer-menu ul, .useful-links ul, .connect-with-us ul {
-    padding: 0;
-}
-
-.footer-menu ul li, .useful-links ul li, .connect-with-us ul li {
-    margin-bottom: 10px;
-    font-size: 20px;
-}
-#m5{
-    width: 75%;
-    margin: auto;
-    margin-top: 20px;
-    background-color: rgba(255, 255, 255, 0.326);
-    padding: 20px;
-    font-size: 0.5cm;
-}
-hr{
-    width: 50%;
-    border: #5c0632 2px solid;
-    margin: 0%;
-}
-
-
 </style>
-
 
 <body>
     <header>
         <div id="h1">
-            <ul>
-                <li><a href="#">Book</a></li>
-                <li><a href="#">Manage</a></li>
-                <li><a href="#">Where we fly</a></li>
-                <li><a href="#">Help</a></li>
-            </ul>
-        </div>
-        <div id="h2">
-            <button class="hb">Contact us</button>
-            <button class="hb">Email us</button>
-        </div>
-        <div id="h3">
             <img src="pro1.jpg" alt="">
 
         </div>
+
+        <div id="h1hidden">
+            <button class="hbh">Sign in</button>
+            <button class="hbh">Login</button>
+        </div>
+
+        <hr id="headhr">
+        <div id="h2">
+            <ul>
+                <span>
+                    <li><a href="#">Book</a></li>
+                </span>
+                <span>
+                    <li><a href="#">Manage</a></li>
+                </span>
+                <span>
+                    <li><a href="#">Where we fly</a></li>
+                </span>
+                <span>
+                    <li><a href="#">Help</a></li>
+                </span>
+            </ul>
+        </div>
+        <div id="h3">
+            <button class="hb">Sign in</button>
+            <button class="hb">Login</button>
+        </div>
     </header>
-    <main>
-        <div id="m1">
-            B o o k
-        </div>
-        <div id="m2">
-            Book&nbsp; a&nbsp; flight
-        </div>
-        <div id="m3">
-            <p>
-                Search for International flights and book online. See our routes and schedules, and discover more about
-                the experience you can look forward to on board.
-            </p>
-        </div>
-        <div id="m4">
-            <div class="m4">Search your Flight</div>
-            <input type="search" placeholder="Departure Airport" class="button" id="departure">
-            <input type="search" placeholder="Arrival Airport" class="button" id="departure">
-
-            <input type="date" class="button" id="date">
-
-            <input type="date" class="button" id="date">
-
-            <input type="number" placeholder="Passengers" class="button" id="number">
-            <input type="search" placeholder="Class(Economy)" class="button" id="departure">
-            <button class="button1" id="departure">Search Flight</button>
-        </div>
+    <main id="main1">
+       
+            <div id="m1">
+               B o o k
+           </div>
+           <div id="m2">
+               Book&nbsp; a&nbsp; flight
+           </div>
+           <div id="m3">
+               <p>
+                   Search for International flights and book online. See our routes and schedules, and discover more about
+                   the experience you can look forward to on board.
+               </p>
+           </div>
+       
+        
+           <div id="main2top">Search your flight</div>
+           <main id="main2">
+               <input type="text" placeholder="Departure" class="button" id="button1">
+               <input type="text" placeholder="Arrivel" class="button" id="button2">
+               <div class="button">
+                   <input type="date" class="button1" id="button3">
+                   <span>-</span>
+                   <input type="date" class="button1" id="button4">
+               </div>
+               <input type="number" placeholder="Passenger" class="button" id="button5">
+               <input type="text" placeholder="Class(Economy)" id="button6" class="button">
+               <button id="button7" class="button2">Search flight</button>
+           </main>
+        
+       
         <div id="m5">
             <h1>How to book a flight ticket with HS</h1>
             <hr>
             <h2>Book a flight ticket online</h2>
-            <p>To find the right air ticket for your trip, just enter the location you're flying from and your flight destination. Enter your dates, class of travel and the number of passengers. Select "Search flights" to continue with the online flight booking process and book a flight ticket that suits your travel plans.</p>
+            <p>To find the right air ticket for your trip, just enter the location you're flying from and your flight
+                destination. Enter your dates, class of travel and the number of passengers. Select "Search flights" to
+                continue with the online flight booking process and book a flight ticket that suits your travel plans.
+            </p>
             <h2>Compare flight ticket fares</h2>
-            <p>Look out for our Best Price Guarantee mark to make sure you're getting the best flight ticket price when you book a flight with HS.</p>
+            <p>Look out for our Best Price Guarantee mark to make sure you're getting the best flight ticket price when
+                you book a flight with HS.</p>
         </div>
-
     </main>
     <footer>
-        
-        <div class="footer-menu">
-            <ul>
-                <li>Home</li>
-                <li>Flights</li>
-                <li>Destinations</li>
-                <li>Travel Information</li>
-                <li>Manage Booking</li>
-                <li>About Us</li>
-                <li>Contact Us</li>
-            </ul>
-        </div>
-        <div class="useful-links">
-            <ul>
-                <li>Flight Status</li>
-                <li>Baggage Information</li>
-                <li>Check-in Options</li>
-                <li>Travel Policies</li>
-                <li>Privacy Policy</li>
-                <li>Terms and Conditions</li>
-            </ul>
-        </div>
-        <div class="connect-with-us">
-            <ul>
-                <li>Facebook</li>
-                <li>Twitter</li>
-                <li>Instagram</li>
-                <li>LinkedIn</li>
-            </ul>
-        </div>
-        <div class="contact-info">
-            <p>Customer Service: [Customer Service Phone Number]</p>
-            <p>Email: [Customer Service Email]</p>
-            <p>Address: [Airline Headquarters Address]</p>
-        </div>
+        <p>&copy; 2023 HS. All rights reserved.</p>
     </footer>
 </body>
 
